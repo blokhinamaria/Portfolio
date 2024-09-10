@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Maria Blokhina | Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Maria Blokhina
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          jdoe@jeemail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +13456764598
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendation</a>
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="html_finalprojimages/3d-business-young-woman-sitting-with-laptop-and-stylus.png" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Maria Blokhina! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            I am a graphic designer with 4 years of experience, 
+            currently studying to transition into a full-stack developer. 
+            My background includes user experience (UX) design, 
+            user interface (UI) design, branding, and print production.
+            I am well-versed in Figma and have experience with HTML, CSS,
+            and JavaScript. My design background makes me unique as a developer,
+            allowing me to blend creativity with technical skill as I expand
+            my expertise in full-stack development.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h5>HTML</h5>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/CSS3.png"/>
+          <h5>CSS</h5>
+          <p>2 years experience</p>
+        </div>  
+
+        <!-- Add more skills here -->
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h5>JavaScript</h5>
+          <p>.5 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/java.png"/>
+          <h5>Java</h5>
+          <p>.5 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/react.png"/>
+          <h5>React</h5>
+          <p>.5 years experience</p>
+        </div>  
+        
+        <div class="skill">
+          <img src="html_finalprojimages/node.png"/>
+          <h5>Node.js</h5>
+          <p>.5 years experience</p>
+        </div>
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>E-commerce Website</h3>
+            <ul>
+              <li>Built a secure multi-page e-commerce website with a user-friendly interface and integrated with chatbot for a Tampa-local clothing brand. Used HTML, CSS, and JavaScript, integrated with IBM Watson Assistant and a Firebase backend for product management and user authentication.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Task Management App</h3>
+            <ul>
+              <li>Created a task management web application using HTML, CSS, and JavaScript, along with Node.js and MongoDB for backend services. Implemented features like task creation, deletion, deadlines, and notifications.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Weather Dashboard</h3>
+            <ul>
+              <li>Developed a weather dashboard application that fetches real-time data using a third-party API. Built the front end using HTML, CSS, JavaScript, and integrated features like location-based weather and multiple city searches.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          As a full-stack developer with a design background, Maria combines creativity with technical expertise. Her attention to detail and innovative approach made her a valuable asset to any team.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Maria has an impressive ability to blend design and development. Her strong understanding of UX/UI principles, paired with growing coding skills, sets her apart as a uniquely versatile developer.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I've had the pleasure of working with Maria on multiple projects. Her creative design background, combined with her ease of understanding technical complexity, makes her a true standout. 
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thank you for your recommendation!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
